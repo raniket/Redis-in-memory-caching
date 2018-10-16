@@ -1,7 +1,7 @@
 const redis = require('redis');
 const dotenv = require('dotenv')
 
-if (process.env.NODE_ENV = test) {
+if (process.env.NODE_ENV==='test') {
   dotenv.config();
 }
 const client = redis.createClient({
