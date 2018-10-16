@@ -10,9 +10,9 @@ client.on("error", function (err) {
   console.log("Error " + err);
 });
 
-client.set("string key", "string val", redis.print);
+// client.set("string key", "string val", redis.print);
 
-client.get("string key", function (err, reply) {
+client.get("a", function (err, reply) {
   // reply is null when the key is missing
   if (err) throw err;
   console.log(reply);
